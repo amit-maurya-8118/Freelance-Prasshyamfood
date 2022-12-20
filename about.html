@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>about</title>
+	<link rel="stylesheet" type="text/css" href="about.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+    <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Product.html">Products</a></li>
+          <li><a href="Overview.html">Overview</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+      </nav>
+</section>	
+
+	<div class="about-section">
+  <h1>About Us</h1>
+  <p>Prassyam food Pvt. Ltd. was established by Mr. Radhe Shyam Yadav and Prashant Yadav. This Company is for production of <br>cooking material and Daily Life necessary Products.</p>
+  <p>We are Providing Raw Foods Materials of Best Quality at Cheaper Price.</p>
+</div>
+
+<h1 style="text-align:center">Our Team</h1>
+<div class="row">
+  
+  <div class="column"> 
+    <div class="col">
+      <img src="RadheShyam.jpeg">
+    </div>
+    <h2>Radhe Shyam Yadav</h2>
+    <p class="title">CEO and Founder</p>
+    <p>Post-Graduated with Bussiness Development & Product Manager.</p>
+    <p>radheshyamyadavabrc@gmail.com</p>
+    <p>Phone no:- 8957506724</p>
+    
+</div>
+
+  <div class="column">
+    <div class="col">
+      <img src="Prashant.jpeg">
+    </div>
+        <h2>Prashant Yadav</h2>
+        <p class="title">Director & Founder</p>
+        <p>Mechanical Engineer and Bussiness Developer Manager.</p>
+        <p>prashant.nizamabad@gmail.com</p>
+        <p>Phone no:- 9919533656</p>
+        
+  </div>
+ 
+</div>
+<script>
+  var navLinks = document.getElementById("navLinks");
+   
+   function showMenu(){
+    navLinks.style.right = "0";
+   }
+   function hideMenu(){
+    navLinks.style.right = "-200px";
+   }
+</script>
+
+</body>
+</html>

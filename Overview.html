@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>gallery</title>
+  <style>
+    html,body{
+	overflow-x: hidden;
+}
+.header{
+	
+  background-color: rgb(58, 16, 98);
+  height: 10vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  background-position: center; 
+  }
+  .nav{
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;	
+    align-items: center;
+  }
+  
+  
+  .nav-links{
+    flex: 1;
+    text-align: right;
+    margin-top: -19px;
+  
+  }
+  
+  .nav-links ul li{
+  
+    list-style: none;
+    padding: 8px 35px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  
+  
+  .nav-links ul li a{
+    text-decoration: none;
+    color:wheat;
+    font-size: 23px;
+  
+  }
+  
+  .nav-links ul li::after{
+    
+      content: '';
+    width: 0%;
+    height: 2px;
+    background: f44336;
+    display: block;
+    margin: auto;
+      transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+      width: 100%;
+    color: red;
+    
+  }
+  
+
+.heading{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: x-large;
+}
+.row{
+  display: flex;
+  margin: 3px 20px;
+  width: 100%;
+}
+
+div.gallery {
+  margin: 20px;
+  border: 4px solid #311111;
+  float: left;
+  width: 22%;
+  transition: 0.4s;
+
+}
+
+div.gallery:hover {
+  border: 2px solid rgb(156, 57, 57);
+  transform: scale(1.03);
+}
+
+div.gallery img {
+  width: 100%;
+  height: 35vh;
+ 
+}
+
+div.desc {
+  padding: 5px;
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+  color: rgb(254, 252, 252);
+}
+nav .fa-solid{
+	display: none;
+
+}
+  @media(max-width: 700px){
+    .row{
+      flex-direction: column;
+      margin: 20px 2px;
+    }
+    div.gallery {
+  margin: 10px;
+  border: 2px solid #311111;
+  float: left;
+  width: 220px;
+    }
+div.gallery {
+  margin: 20px;
+  float: left;
+  width: 85%;
+  transition: 0.4s;
+
+
+}
+  
+  div.gallery img {
+  width: 100%;
+  height: 30vh;
+ 
+}
+
+
+.nav-links ul li{
+ 	display: block;
+}
+ 
+ .nav-links{
+    background: rgb(110, 96, 96);
+    height: 100vh;
+    width: 200px ;
+    top: 0;
+   right: -200px;
+   text-align: left;
+   z-index: 2;
+   margin-top: 0px;
+   position: absolute;
+   transition: .5s;
+   
+   
+    }
+	nav .fa-solid{
+	display: block;
+	color: #fff;
+	margin: 20px;
+	font-size: 22px;
+	cursor: pointer;
+	margin-top: 0;
+	float: right;
+	
+	
+	}
+	.nav img{
+		width: 200px;
+		
+	}
+.nav-links ul{
+   padding: 30px;
+}
+.nav-links ul li{
+
+	padding: 10px 15px;
+}
+.nav-links ul li a{
+
+   font-size: 20px;
+}
+}
+
+</style>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body style="background-image: linear-gradient(rgba(4,9,30,0.5),rgba(9, 9, 9, 0.5)),url(Background5.jpg)">
+  <section class="header">
+    <nav>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+    <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Product.html">Products</a></li>
+          <li><a href="Overview.html">Overview</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+      </nav>
+</section>	
+ <div class="heading">
+  <h1>OVERVIEW</h1>
+  <p>Some pictures that belongs to the Company, Staff and Machineries.</p>
+</div>
+<div class="row">
+  <div class="gallery">
+     <a target="_blank" href="Office.jpeg">
+    <img src="Office.jpeg" alt="snow">
+  </a>
+  <div class="desc">CEO</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Office1.jpeg">
+    <img src="Office1.jpeg" alt="Forest" >
+  </a>
+  <div class="desc">Office</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Sack.jpg">
+    <img src="Sack.jpg" alt="Northern Lights" >
+  </a>
+  <div class="desc">Sample</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="Workers.jpg">
+    <img src="Workers.jpg" alt="Mountains">
+  </a>
+  <div class="desc">Workers</div>
+</div>
+</div>
+
+<div class="row">
+<div class="gallery">
+  <a target="_blank" href="class8.jpg">
+    <img src="class8.jpg" alt="Mountains">
+  </a>
+  <div class="desc">Staff</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="Machine.jpg">
+    <img src="Machine.jpg" alt="Mountains" >
+  </a>
+  <div class="desc">Machine</div>
+</div>
+
+
+<div class="gallery">
+  <a target="_blank" href="Grains.jpg">
+    <img src="Grains.jpg" alt="Mountains">
+  </a>
+  <div class="desc">Field</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="Factory.jpg">
+    <img src="Factory.jpg" alt="Mountains">
+  </a>
+  <div class="desc">Factory</div>
+</div>
+</div>
+
+<div class="row">
+<div class="gallery">
+  <a target="_blank" href="Wharehouse.jpg">
+    <img src="Wharehouse.jpg" alt="Mountains">
+  </a>
+  <div class="desc">Wharehouse</div>
+</div>
+</div>
+<script>
+  var navLinks = document.getElementById("navLinks");
+   
+   function showMenu(){
+    navLinks.style.right = "0";
+   }
+   function hideMenu(){
+    navLinks.style.right = "-200px";
+   }
+</script>
+</body>
+</html>
